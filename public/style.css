@@ -1,0 +1,36 @@
+.jumbotron {
+  padding-top: 120px;
+  background-color: rgb(255, 213, 134);
+  height: 640px;
+}
+section {
+  padding-top: 6rem;
+}
+#about {
+  padding-top: 120px;
+}
+
+#about .col h2 {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#projek {
+  padding-top: 8%;
+  margin-top: -1px;
+}
+
+#projek .col h2 {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ombak {
+  margin-bottom: -1px;
+}
+footer a {
+  text-decoration: none;
+}
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+}

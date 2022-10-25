@@ -43,7 +43,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            @include('layout.Footer')
+            @include('layout.footer')
             <!-- End of Footer -->
 
         </div>

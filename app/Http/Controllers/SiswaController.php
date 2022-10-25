@@ -23,7 +23,7 @@ class SiswaController extends Controller
     {
          
         $data = siswa::get();
-        return view('MasterSiswa',['datas'=>$data]);
+        return view('Mastersiswa',['datas'=>$data]);
         // return $data;
         // return view('siswa.index');
     }

@@ -10,8 +10,10 @@
                         <a class="nav-link active" href="/about">About</a>
                         <a class="nav-link active" href="/projects">Projects</a>
                         <a class="nav-link active" href="/contact">Contact</a>
+                        
                     </div>
                 </div>
             </div>
+            <a class="nav-link active ml-auto" href="/login">login</a>
         </nav>
     

@@ -4,7 +4,7 @@
    @section('container');
 
 <section class="jumbotron text-center">
-            <img src="img/logo.png" alt="aaa" width="200" class=" rounded-circle img-thumbnail">
+            <img src="{{ asset('template/img/logo.png')}}" alt="aaa" width="200" class=" rounded-circle img-thumbnail">
             <h1 class="display-4">Rahmad Rizki Firmansyah</h1>
             <p class="lead">12 RPL 2 | Absen 27</p>
         </section>

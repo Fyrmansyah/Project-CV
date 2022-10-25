@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\siswa;
 use App\Models\project;
+use App\Models\kontak;
 
 
 use Illuminate\Http\Request;
@@ -19,7 +20,8 @@ class DashboardController extends Controller
        
         $Hasil = siswa::all()->count();
         $Hasil2 = project::all()->count();
-        return view('MasterDasboard', compact('Hasil', 'Hasil2'));
+        $Hasil3 = kontak::all()->count();
+        return view('MasterDasboard', compact('Hasil', 'Hasil2', 'Hasil3'));
     }
 
     /**

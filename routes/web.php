@@ -93,3 +93,8 @@ Route::post('mkontak/store',[KontakController::class,'store']);
 Route::get('/logout', [LoginController::class, 'logout']);
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'auth']);
+
+Route::get('/showkontak/{id}', [KontakController::class, 'showKontak']);
+    Route::post('/addjenis', [KontakController::class, 'storeJenis']);
+    Route::post('/deletejenis/{id}', [KontakController::class, 'deleteJenis']);
+    Route::post('/updatejenis', [KontakController::class, 'updateJenis']);

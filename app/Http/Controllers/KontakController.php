@@ -16,9 +16,14 @@ class KontakController extends Controller
      */
     public function index()
     {
+        $jenis = jenis_kontak::get();
         $datas = siswa::paginate(1);
         // return $datas;
-        return view('MasterKontak', compact('datas'));
+        return view('MasterKontak', compact('datas', 'jenis'));
+
+       
+        
+        
        
     }
     /**
@@ -119,5 +124,46 @@ class KontakController extends Controller
         $siswa = kontak::find($id);
         $siswa->delete();
         return redirect("/mkontak")->with('success', 'data telah dihapus');
+    }
+
+// ===================================================================================================
+
+    public function updatejenis(Request $request)
+    {
+        $data = jenis_kontak::find($request->id);
+        return response()->json([
+            "data" => $data,
+            "success" => true
+        ]);
+    }
+
+    public function deleteJenis($id)
+    {
+        jenis_kontak::destroy($id);
+        return response()->json([
+            "success" => true,
+            "messagge" => "jenis kontak berhasil dihapus"
+        ]);
+    }
+
+    public function storeJenis(Request $request)
+    {
+        $data = [
+            "jenis_kontak" => $request->jenis
+        ];
+
+        if(is_null($request->id)){
+            jenis_kontak::create($data);
+            $msg = "jenis kontak berhasil ditambahkan";
+        } else {
+            jenis_kontak::where('id', $request->id)->update($data);
+            $msg = "jenis kontak berhasil diperbarui";
+        }
+
+        return response()->json([
+            "data" => $data,
+            "success" => true,
+            "messagge" => $msg
+        ]);
     }
 }

@@ -112,8 +112,10 @@ class SiswaController extends Controller
     public function show($id)
     {
         $siswa=siswa::find($id);
+        $project=siswa::find($id)->project()->get();
+
         $kontaks =$siswa->kontak()->get();
-        return view('siswa.show', compact('siswa', 'kontaks'));
+        return view('siswa.show', compact('siswa', 'kontaks','project'));
 
     }
 

@@ -52,6 +52,28 @@
      <div class="card-header " style=" background: linear-gradient(to left, #3366cc 0%, #66ffff 103%););">
             <h6 class="m-0 font-weight-bold text-primary"> <i class="fas fa-tasks"> </i> PROJECT </h6>
          </div>
+         @foreach($project as $item)
+         <div class="card">
+            <div class="card-header">
+                <strong>{{$item->nama_project}}</strong>
+            </div>
+        
+            <div class="card-body"> 
+                
+                <strong>Tanggal Project : </strong>
+                <p>{{$item->tanggal}}</p>
+                <strong> Deskripsi : </strong>
+                <p>{{$item->deskripsi}}</p>
+        
+            </div>
+        
+            <div class="card-footer d-flex">
+            
+            </form>
+            <!-- <a href="{{route ('mproject.destroy', $item ->id)}}" class="btn btn-sm btn-danger btn-circle"><i class="fas fa-trash"></i></a> -->
+            </div>
+         </div>
+        @endforeach
         <div class="card-body">
       </div>
   </div>

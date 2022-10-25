@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+<nav class="p-3 navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">Firmansyah</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,6 +14,7 @@
                     </div>
                 </div>
             </div>
-            <a class="nav-link active ml-auto" href="/login">login</a>
+
+            <a class="btn btn-danger ml-auto mr-5" href="/login">login</a>
         </nav>
     

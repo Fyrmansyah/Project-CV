@@ -27,7 +27,7 @@
 <hr class="sidebar-divider">
 
 <li class="nav-item">
-    <a class="nav-link" href="{{asset(/msiswa)}}">
+    <a class="nav-link" href="/msiswa">
         <i class="fas fa-fw fa-user"></i>
         <span>Master Siswa</span></a>
 </li>

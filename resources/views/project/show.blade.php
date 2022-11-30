@@ -18,7 +18,9 @@
     </div>
 
     <div class="card-footer d-flex">
-    <a href="{{route('mproject.edit', $item ->id)}}" class="btn btn-sm btn-warning btn-circle mr-3"><i class="fas fa-edit"></i></a>
+
+    <a href="{{route('mproject.edit', $item ->id)}}" class="btn btn-sm btn-warning btn-circle mr-3"><i class="fas fa-edit"></i>
+    </a>
     <form action="/mproject/{{$item->id}}" method="post" >
         @csrf      
         @method('DELETE')

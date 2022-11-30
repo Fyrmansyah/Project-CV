@@ -36,7 +36,7 @@
                 @enderror
             </div>
             <div class="modal-footer">
-                <a href="/masterproject" class="btn btn-warning" ><i class="fa fa-reply"></i>&nbsp;Cancel</a>
+                <a href="/mproject" class="btn btn-warning" ><i class="fa fa-reply"></i>&nbsp;Cancel</a>
                 <button class="btn btn-success" ><i class="fa fa-save"></i>&nbsp;Tambah Project</button>
             </div>
         
